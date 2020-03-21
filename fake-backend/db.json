@@ -1,0 +1,30 @@
+{
+  "users": [
+    { "id":  "1",
+      "name": "Peter",
+      "email": "a@a.de"
+    },
+    { "id":  "2",
+      "name": "Karl",
+      "email": "b@a.de"
+    },
+    { "id":  "3",
+      "name": "Olaf",
+      "email": "c@a.de"
+    }
+  ],
+  "corporate": [
+    { "id":  "1",
+      "name": "Krankenhaus",
+      "email": "a@b.de"
+    },
+    { "id":  "2",
+      "name": "Spital",
+      "email": "b@b.de"
+    },
+    { "id":  "3",
+      "name": "Arzt",
+      "email": "c@b.de"
+    }
+  ]
+}
