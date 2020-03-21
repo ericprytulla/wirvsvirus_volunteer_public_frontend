@@ -12,6 +12,11 @@ export class AuthService {
 
   constructor(private httpService: HttpClient, private config: ConfigService) { }
 
+  register(email: string, password: string, type: 'user' | 'corporate'): Observable<any> {
+    const body = {email, password, type};
+    return this.httpService.post(this.config.BackendIp + '/register', body, {headers: this.headers});
+  }
+
   login(username: string, password: string): Observable<any> {
     const body = {username, password};
     return  this.httpService.post(this.config.BackendIp + '/login', body, {headers: this.headers});
