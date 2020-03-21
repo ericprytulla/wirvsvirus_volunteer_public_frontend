@@ -16,6 +16,9 @@ import {LoginComponent} from './login/login.component';
 import {RegistrationHelperComponent} from './registration-helper/registration-helper.component';
 
 import { ngfModule, ngfFormData } from "angular-file";
+import {HttpClientModule} from '@angular/common/http';
+import {AuthService} from './services/auth/auth.service';
+import {ConfigService} from './services/config/config.service';
 
 const appRoutes: Routes = [
     {path: '', component: StartComponent},
